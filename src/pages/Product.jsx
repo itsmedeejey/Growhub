@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import { ProductData } from "../testingdata/products";
+import { RelatedProducts } from "../components/realtedProducts";
+
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
@@ -14,6 +17,8 @@ export const Product = () => {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
   const [dropdownTextOpen,setdropdownTextOpen] = useState(false);
+  const [dropdownProductDetails,setdropdownProductDetails] = useState(false);
+
   
 
  const [quantity, setQuantity] = useState(1);
@@ -130,7 +135,7 @@ const increase = () => {
             <p className="text-gray-600 mb-6">{product.description}</p>
 
 
-            <div className="mb-2">
+            <div className="mb-1">
               <span className="text-2xl font-bold text-green-700">₹{product.price}</span>
               <span className="ml-3 line-through text-red-500">₹{product.higher_price}</span>
               <span className="ml-4 bg-green-100 text-green-800 px-2 py-1 rounded text-sm font-medium">
@@ -138,8 +143,8 @@ const increase = () => {
               </span>
             </div>
 
-            <p className="text-sm mb-0">Tax Included</p>
-            <p className="text-sm mb-2">🚲 Delivery Charges Applicable</p>
+            <p className="text-xs mb-0">Tax Included</p>
+            <p className="text-sm mb-2 font-thin">Delivery Charges Applicable</p>
             <p className="text-sm mb-2 hidden">SKU: {product.sku}</p>
             <p className="text-sm mb-4">📍 {product.location}</p>
 
@@ -170,8 +175,8 @@ const increase = () => {
            
 {/* icons  */}
             <div className="flex flex-row gap-1 mt-10  text-[8px] md:text-xs  justify-center  ">
-              <div className="flex  flex-col   justify-center items-center text-center ">
-                  <img className="h-12 " src="/productpageIcons/handcraft.png" alt="ecoFriendly" />
+              <div className="flex  p1-2 flex-col   justify-center items-center text-center ">
+                  <img className="h-12 " src="/productpageIcons/handcraft.png" alt="handcrafted" />
                   <h1>HAND CRAFTED</h1>
                   <p>Handmade With Love</p>
               </div>
@@ -181,12 +186,12 @@ const increase = () => {
                   <p>Go Green For A Better Tomorrow</p>
               </div>
               <div className="flex  flex-col justify-center items-center text-center">
-                  <img className="h-12" src="/productpageIcons/delivery-truck.png" alt="ecoFriendly" />
+                  <img className="h-12" src="/productpageIcons/delivery-truck.png" alt="fast delivery" />
                   <h1>FAST DELIVERY</h1>
                   <p>Fast Shipping On All Orders</p>
               </div>
               <div className="flex  flex-col justify-center items-center text-center">
-                  <img className="h-12" src="/productpageIcons/credit-card.png" alt="ecoFriendly" />
+                  <img className="h-12" src="/productpageIcons/credit-card.png" alt="secure payments" />
                   <h1>SECURE PAYMENTS</h1>
                   <p>Safe, Fast And Secure Online Payments</p>
               </div>
@@ -212,10 +217,35 @@ const increase = () => {
               <li>• Durable Versatile Design</li>
             </ul>}
 
+{/* product details */}
+             <div className="cursor-pointer  p-3  border-b-[1px] border-slate-400 flex flex-row gap-10 justify-between" onClick={()=>setdropdownProductDetails(!dropdownProductDetails)}>
+
+            <button className="font-semibold text-xl  text-start" >Product details </button>
+             <ChevronDownIcon
+          className={`h-10 w-10 text-slate-900 transform transition-transform duration-300 ${
+            dropdownProductDetails ? 'rotate-180' : ''
+          }`}
+        />
+
+            </div>
+           {dropdownProductDetails&& <ul className="mt-2 text-sm md:text-lg text-gray-700 mb-6 space-y-1">
+              
+            <li>• Dimensions: 24” L x 24” W x 28” H</li>
+            <li>• Weight: 7.5 kg (16.5 lbs)</li>
+            <li>• Material: Engineered wood with matte laminate finish</li>
+            <li>• Load Capacity: Up to 30 kg (66 lbs)</li>
+          </ul>}
+
+
 
           </div>
         </div>
       </main>
+          
+            <div className="px-10 pt-20 flex flex-col">
+            <h1 className="text-4xl md:text-[60px] font-bold font-serif text-slate-900 justify-center text-center mb-10">You might also like</h1>
+          <RelatedProducts items={ProductData}></RelatedProducts>
+            </div>
 
       <Footer></Footer>
     </div>

@@ -1,7 +1,6 @@
 
-export const  ProductData =()=>{
-const products = [
-    {
+export const  ProductData =[ 
+        {
         "id": "335",
         "thumbnail": "https://api.growhub.shop/uploads/products/2025030696641.jpg",
         "product": "HYACINTH COASTER",
@@ -218,4 +217,3 @@ const products = [
         "price": "1199"
     },
 ]
-}
