@@ -147,7 +147,7 @@ export default function ReviewSection() {
       <h2 className="text-2xl font-semibold mb-4">Product's Reviews</h2>
 
       {/* Review Form */}
-      <form onSubmit={handleSubmit} className="shadow-lg space-y-4 mb-8 border p-4 rounded-xl bg-white w-[360px] md:w-[600px] lg:w-[700px]">
+      <form onSubmit={handleSubmit} className="shadow-lg space-y-4 mb-8 border p-4 rounded-xl bg-white w-[330px] sm:w-[430px] md:w-[600px] lg:w-[700px]">
         <input
           type="text"
           placeholder="Your Name"
@@ -192,7 +192,7 @@ export default function ReviewSection() {
         {reviews.map((review) => (
           <div
             key={review.id}
-            className=" h-auto w-[360px] sm:w-[600px] md:w-[700px] border rounded-lg p-4 shadow-sm justify-center items-center bg-[#fff]"
+            className=" h-auto w-[320px] sm:w-[600px] md:w-[700px] border rounded-lg p-4 shadow-sm justify-center items-center bg-[#fff]"
           >
             <StarRating rating={review.rating} />
             <div className="flex justify-between items-center pt-1">
