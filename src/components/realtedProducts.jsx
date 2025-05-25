@@ -1,7 +1,7 @@
 export const RelatedProducts = ({ items }) => {
   return (
-    <div className="w-full px-4 py-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="w-full  py-8">
+      <div className="max-w-7xl  md:mx-auto ">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
           {items.map((product) => {
             const off = +product.higher_price > +product.price
@@ -13,7 +13,7 @@ export const RelatedProducts = ({ items }) => {
                 key={product.id}
                 className="bg-white rounded-lg shadow hover:shadow-md transition-shadow duration-200 overflow-hidden flex flex-col h-full"
               >
-                <div className="aspect-square overflow-hidden relative">
+                <div className="aspect-square   overflow-hidden relative">
                   {off > 0 && (
                     <div className="absolute z-10 rotate-[-45deg] top-3 left-[-25px] text-center text-sm text-white bg-red-500 w-28 py-1">
                       {off}% Off

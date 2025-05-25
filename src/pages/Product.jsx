@@ -242,7 +242,7 @@ const increase = () => {
         </div>
       </main>
           
-            <div className="px-10 pt-20 flex flex-col">
+            <div className="px-5 pt-20 flex flex-col">
             <h1 className="text-4xl md:text-[60px] font-bold font-serif text-slate-900 justify-center text-center mb-10">You might also like</h1>
           <RelatedProducts items={ProductData}></RelatedProducts>
             </div>
