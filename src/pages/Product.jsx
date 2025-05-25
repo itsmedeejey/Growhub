@@ -3,7 +3,7 @@ import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { ProductData } from "../testingdata/products";
 import { RelatedProducts } from "../components/realtedProducts";
-
+import ReviewSection from "../components/Reviewsection";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
@@ -58,7 +58,7 @@ const increase = () => {
   };
   const discount = Math.round((((product.higher_price)-(product.price))/product.higher_price)*100)
   return (
-    <div className="min-h-screen bg-[#EEEEE6]">
+    <div className="min-h-screen bg-[#fff]">
       <Navbar />
 
       <main className="max-w-7xl mx-auto p-4 sm:p-6 lg:px-8 py-2">
@@ -128,7 +128,7 @@ const increase = () => {
           </div>
 
           {/* Product Details */}
-          <div className="bg-white rounded-md shadow p-6 flex flex-col">
+          <div className="bg-white rounded-xl shadow p-6 flex flex-col">
             <h1 className="text-3xl font-bold mb-1 leading-1">{product.name}</h1>
             
             <a className="text-blue-800 mb-4" href="">{product.retailer}</a>
@@ -136,7 +136,7 @@ const increase = () => {
 
 
             <div className="mb-1">
-              <span className="text-2xl font-bold text-green-700">₹{product.price}</span>
+              <span className="text-2xl font text-blue-900">₹{product.price}</span>
               <span className="ml-3 line-through text-red-500">₹{product.higher_price}</span>
               <span className="ml-4 bg-green-100 text-green-800 px-2 py-1 rounded text-sm font-medium">
                 {discount}% Discount
@@ -146,13 +146,13 @@ const increase = () => {
             <p className="text-xs mb-0">Tax Included</p>
             <p className="text-sm mb-2 font-thin">Delivery Charges Applicable</p>
             <p className="text-sm mb-2 hidden">SKU: {product.sku}</p>
-            <p className="text-sm mb-4">📍 {product.location}</p>
+            <p className="text-sm mb-4">Location: {product.location}</p>
 
             <label className="block text-sm font-medium mb-1">Special Customization:</label>
             <input
               type="text"
               placeholder="Customization Here..."
-              className="w-full p-2 border rounded mb-2"
+              className="w-full p-2 border rounded-xl mb-2"
             />
 
 
@@ -246,7 +246,7 @@ const increase = () => {
             <h1 className="text-4xl md:text-[60px] font-bold font-serif text-slate-900 justify-center text-center mb-10">You might also like</h1>
           <RelatedProducts items={ProductData}></RelatedProducts>
             </div>
-
+        <ReviewSection></ReviewSection>
       <Footer></Footer>
     </div>
   );

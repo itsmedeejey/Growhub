@@ -75,7 +75,7 @@ export const Footer = () => {
           {/* Right Section:*/}
           <div className="w-full md:w-1/4 bg-[#d2cbc4] px-2 md:px-2  flex flex-col items-center justify-center">
             <div className="mb-6">
-              <img src="blackLogo.png" alt="GrowHub Logo" className="w-40 md:w-48 lg:w-64" />
+              <img src="blackLogo.png" alt="GrowHub Logo" className="w-40 md:w-48 lg:w-64 pt-5" />
             </div>
 
             <div className="flex gap-4 lg:gap-6 mb-6 text-black text-xl">
