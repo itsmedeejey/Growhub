@@ -243,7 +243,7 @@ const increase = () => {
       </main>
           
             <div className="px-5 pt-10 flex flex-col">
-            <h1 className="text-2xl md:text-[50px] font-semibold  text-slate-700 md:mb-5 justify-center text-center  font-playfair ">Explore Related products</h1>
+            <h1 className="text-2xl md:text-[35px]   text-slate-700 md:mb-5 justify-center text-center  font-playfair ">Explore Related products</h1>
           <RelatedProducts items={ProductData}></RelatedProducts>
             </div>
         <ReviewSection></ReviewSection>

@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily: {
         montserrat: ['Montserrat', 'serif'],
-                playfair: ['"Playfair Display"', 'serif'],
+        playfair: ['"Playfair Display"', 'serif'],
 
 
       },

@@ -15,7 +15,7 @@ export const RelatedProducts = ({ items }) => {
               >
                 <div className="aspect-square   overflow-hidden relative">
                   {off > 0 && (
-                    <div className="absolute z-10 rotate-[-45deg] top-4 left-[-35px] pl-3 text-center text-sm text-white bg-red-500 w-28 py-1">
+                    <div className="absolute z-10 rotate-[-45deg] top-4 left-[-35px] pl-3 text-center text-sm text-slate-900 bg-transparent backdrop-blur-xl shadow-md w-28 py-1">
                       {off}% Off
                     </div>
                   )}
