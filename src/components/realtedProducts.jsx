@@ -15,7 +15,7 @@ export const RelatedProducts = ({ items }) => {
               >
                 <div className="aspect-square   overflow-hidden relative">
                   {off > 0 && (
-                    <div className="absolute z-10 rotate-[-45deg] top-3 left-[-25px] text-center text-sm text-white bg-red-500 w-28 py-1">
+                    <div className="absolute z-10 rotate-[-45deg] top-4 left-[-35px] pl-3 text-center text-sm text-white bg-red-500 w-28 py-1">
                       {off}% Off
                     </div>
                   )}
@@ -27,15 +27,15 @@ export const RelatedProducts = ({ items }) => {
                 </div>
 
                 <div className="p-4 flex flex-col flex-grow">
-                  <h3 className="text-md font-semibold mb-1 line-clamp-2 flex-grow">
+                  <h3 className="text-md font-semibold font-playfair mb-1 line-clamp-2 flex-grow">
                     {product.product}
                   </h3>
-                  <div className="flex flex-row items-baseline mb-4">
-                    <p className="text-green-700 font-bold text-xl">
+                  <div className="flex flex-row  items-baseline mb-4">
+                    <p className="text-green-700 font-semibold text-lg">
                       ₹{product.price}
                     </p>
                     {off > 0 && (
-                      <p className="ml-3 line-through text-sm text-red-500">
+                      <p className="ml-2 line-through text-sm text-red-500">
                         ₹{product.higher_price}
                       </p>
                     )}

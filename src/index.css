@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  @apply font-lora;
+  @apply font-montserrat;
 }
 /* Remove number input arrows for Chrome, Safari, Edge, Opera */
 input[type='number']::-webkit-inner-spin-button,

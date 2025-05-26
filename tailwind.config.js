@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        lora: ['Lora', 'serif'],
+        montserrat: ['Montserrat', 'serif'],
+                playfair: ['"Playfair Display"', 'serif'],
+
+
       },
       colors: {
         gbrown: "#693D14",

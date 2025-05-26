@@ -129,7 +129,7 @@ const increase = () => {
 
           {/* Product Details */}
           <div className="bg-white rounded-xl shadow p-6 flex flex-col">
-            <h1 className="text-3xl font-bold mb-1 leading-1">{product.name}</h1>
+            <h1 className="text-2xl md:text-3xl font-bold font-playfair mb-1 leading-1">{product.name}</h1>
             
             <a className="text-blue-800 mb-4" href="">{product.retailer}</a>
             <p className="text-gray-600 mb-6">{product.description}</p>
@@ -144,9 +144,9 @@ const increase = () => {
             </div>
 
             <p className="text-xs mb-0">Tax Included</p>
-            <p className="text-sm mb-2 font-thin">Delivery Charges Applicable</p>
+            <p className="text-xs mb-2 font-thin">Delivery Charges Applicable</p>
             <p className="text-sm mb-2 hidden">SKU: {product.sku}</p>
-            <p className="text-sm mb-4">Location: {product.location}</p>
+            <p className="text-xs mb-2">Location: {product.location}</p>
 
             <label className="block text-sm font-medium mb-1">Special Customization:</label>
             <input
@@ -174,25 +174,25 @@ const increase = () => {
             </div>
            
 {/* icons  */}
-            <div className="flex flex-row gap-1 mt-10  text-[8px] md:text-xs  justify-center  ">
-              <div className="flex  p1-2 flex-col   justify-center items-center text-center ">
+            <div className="flex flex-row gap-1 mt-10  text-[8px] md:text-xs  justify-center  font-playfair ">
+              <div className="flex  pt-2 flex-col   justify-center items-center text-center ">
                   <img className="h-12 " src="/productpageIcons/handcraft.png" alt="handcrafted" />
-                  <h1>HAND CRAFTED</h1>
+                  <h1 className="font-semibold">HAND CRAFTED</h1>
                   <p>Handmade With Love</p>
               </div>
               <div className="flex  flex-col justify-center items-center text-center">
                   <img className="h-12" src="/productpageIcons/EcoFriendly-Green.png" alt="ecoFriendly" />
-                  <h1>ECO FRIENDLY</h1>
+                  <h1 className="font-semibold">ECO FRIENDLY</h1>
                   <p>Go Green For A Better Tomorrow</p>
               </div>
               <div className="flex  flex-col justify-center items-center text-center">
                   <img className="h-12" src="/productpageIcons/delivery-truck.png" alt="fast delivery" />
-                  <h1>FAST DELIVERY</h1>
+                  <h1 className="font-semibold">FAST DELIVERY</h1>
                   <p>Fast Shipping On All Orders</p>
               </div>
               <div className="flex  flex-col justify-center items-center text-center">
                   <img className="h-12" src="/productpageIcons/credit-card.png" alt="secure payments" />
-                  <h1>SECURE PAYMENTS</h1>
+                  <h1 className="font-semibold">SECURE PAYMENTS</h1>
                   <p>Safe, Fast And Secure Online Payments</p>
               </div>
             </div>
@@ -202,7 +202,7 @@ const increase = () => {
 {/* key features colapesable */}
             <div className="cursor-pointer cursor- mt-10 p-3 border-t-[1px] border-b-[1px] border-slate-400 flex flex-row gap-10 justify-between" onClick={()=>setdropdownTextOpen(!dropdownTextOpen)}>
 
-            <button className="font-semibold text-xl  text-start" >Key Features </button>
+            <button className="font-semibold text-lg  text-start" >Key Features </button>
              <ChevronDownIcon
           className={`h-10 w-10 text-slate-900 transform transition-transform duration-300 ${
             dropdownTextOpen ? 'rotate-180' : ''
@@ -220,7 +220,7 @@ const increase = () => {
 {/* product details */}
              <div className="cursor-pointer  p-3  border-b-[1px] border-slate-400 flex flex-row gap-10 justify-between" onClick={()=>setdropdownProductDetails(!dropdownProductDetails)}>
 
-            <button className="font-semibold text-xl  text-start" >Product details </button>
+            <button className="font-semibold text-lg  text-start" >Product details </button>
              <ChevronDownIcon
           className={`h-10 w-10 text-slate-900 transform transition-transform duration-300 ${
             dropdownProductDetails ? 'rotate-180' : ''
@@ -242,8 +242,8 @@ const increase = () => {
         </div>
       </main>
           
-            <div className="px-5 pt-20 flex flex-col">
-            <h1 className="text-4xl md:text-[60px] font-bold font-serif text-slate-900 justify-center text-center mb-10">You might also like</h1>
+            <div className="px-5 pt-10 flex flex-col">
+            <h1 className="text-4xl md:text-[60px] font-semibold  text-slate-700 md:mb-5 justify-center md:text-center  font-playfair text-left">Explore Related products</h1>
           <RelatedProducts items={ProductData}></RelatedProducts>
             </div>
         <ReviewSection></ReviewSection>
