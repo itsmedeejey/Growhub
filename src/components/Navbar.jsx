@@ -6,7 +6,7 @@ export const Navbar = () => {
 
 
       <div className="h-16 flex items-center px-4 pt-2">
-        <img src="/blackLogo.png" alt="logo" className="h-14" />
+        <img src="/brownLogo.png" alt="logo" className="h-14" />
       </div >
       {/* <div className="flex m-3  p-1 justify-center items-center">
 
