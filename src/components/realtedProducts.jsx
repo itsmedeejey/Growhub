@@ -13,7 +13,7 @@ export const RelatedProducts = ({ items }) => {
                 key={product.id}
                 className="bg-white rounded-lg shadow hover:shadow-md transition-shadow duration-200 overflow-hidden flex flex-col h-full"
               >
-                <div className="aspect-square   overflow-hidden relative">
+                <div className="aspect-auto   overflow-hidden relative">
                   {off > 0 && (
                     <div className="absolute z-10 rotate-[-45deg] top-4 left-[-35px] pl-3 text-center text-sm text-slate-900 bg-transparent backdrop-blur-xl shadow-md w-28 py-1">
                       {off}% Off
