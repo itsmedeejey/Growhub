@@ -33,7 +33,6 @@ const ProductFilter = ({ products }) => {
           <option value="highToLow">Price: High to Low</option>
         </select>
 
-        {/* Search */}
         <input
           type="text"
           placeholder="Search product..."
