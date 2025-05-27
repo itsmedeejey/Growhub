@@ -1,3 +1,5 @@
+import ProductFilter from "../components/ProductFilter"
+
 import { ProductCard } from "../components/ProductCard"
 import { Navbar } from "../components/Navbar"
 import { Footer } from "../components/Footer"
@@ -25,8 +27,8 @@ export const ProductPage = ()=>{
 
       </div>
 
-            <div className="mx-8">
-                <ProductCard items={ProductList}></ProductCard>
+            <div className="mx-4 mt-4 bg-slate-100 rounded-2xl">
+                <ProductFilter products={ProductList}></ProductFilter>
             </div>
             <Footer></Footer>
         </div>
