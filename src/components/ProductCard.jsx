@@ -40,7 +40,7 @@ export const ProductCard = ({ items }) => {
                       </p>
                     )}
                   </div>
-
+{/* ...... */}
                   <div className="flex flex-col sm:flex-row gap-2 mt-auto  pb-2">
                     <button className="flex-1 text-sm bg-[#6A994E] text-white px-4 py-2 rounded-full hover:bg-[#386641] transition-colors duration-200 whitespace-nowrap">
                       View Product
