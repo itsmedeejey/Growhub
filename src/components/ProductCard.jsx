@@ -13,7 +13,7 @@ export const ProductCard = ({ items }) => {
                 key={product.id}
                 className=" bg-white rounded-lg shadow hover:shadow-md transition-shadow duration-200 overflow-hidden flex flex-col"
               >
-                <div className="aspect-auto h-60 sm:aspect-[4/5] overflow-hidden relative">
+                <div className="aspect-auto  sm:aspect-[4/5] overflow-hidden relative">
                   {off > 0 && (
                     <div className="absolute z-10 rotate-[-45deg] top-4 left-[-35px] pl-3 text-center text-sm text-slate-900 bg-transparent backdrop-blur-xl shadow-md w-28 py-1">
                       {off}% Off
@@ -22,7 +22,7 @@ export const ProductCard = ({ items }) => {
                   <img
                     src={product.product_thumbnail}
                     alt={product.name}
-                    className="w-full h-full object-fit hover:scale-105 transition-transform duration-200"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-200"
                   />
                 </div>
 

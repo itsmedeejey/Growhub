@@ -26,7 +26,7 @@ const filteredCategories = categories.filter(
                 onClick={() => handleClick(item.id)}
                 className="bg-white cursor-pointer rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex flex-col h-full"
               >
-                <div className="aspect-auto sm:aspect-square md:h-full h-60 overflow-hidden relative " >
+                <div className="aspect-auto sm:aspect-[4/5] h-full  overflow-hidden relative " >
                   <img
                     src={item.logo}
                     alt={item.name}

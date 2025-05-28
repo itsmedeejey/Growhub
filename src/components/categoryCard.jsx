@@ -20,7 +20,7 @@ export const CategoryCard = ({ categories }) => {
                 onClick={() => handleClick(item.id)}
                 className="bg-white  cursor-pointer rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex flex-col h-full"
               >
-                <div className="w-auto aspect-auto sm:aspect-[4.5/5] h-60 sm:h-full overflow-hidden relative">
+                <div className=" aspect-auto sm:aspect-[4.5/5] h-full overflow-hidden relative">
                   <img
                     src={item.logo}
                     alt={item.name}
@@ -28,7 +28,7 @@ export const CategoryCard = ({ categories }) => {
                   />
                 </div>
                 <div>
-                  <h1 className="text-center text-gbrown py-1 px-1 text-lg font-bold font-playfair">
+                  <h1 className="text-center text-gbrown py-2 px-1 text-lg font-bold font-playfair">
                     {item.name}
                   </h1>
                 </div>
