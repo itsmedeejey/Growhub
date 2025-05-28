@@ -26,16 +26,16 @@ const filteredCategories = categories.filter(
                 onClick={() => handleClick(item.id)}
                 className="bg-white cursor-pointer rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex flex-col h-full"
               >
-                <div className="aspect-[4.5/5] overflow-hidden relative">
+                <div className="aspect-auto sm:aspect-square md:h-full h-60 overflow-hidden relative " >
                   <img
                     src={item.logo}
                     alt={item.name}
-                    className="relative w-full h-full object-cover hover:scale-105 transition-transform duration-200"
+                    className="relative w-full h-full object-fit md:object-cover  hover:scale-105 items-end transition-transform duration-200"
                   />
 
                 </div>
                 <div>
-    <h1 className="  text-center   text-gbrown py-3 px-1 text-lg font-bold font-playfair">{item.name}</h1>
+    <h1 className="  text-center   text-gbrown py-1 px-1 text-lg font-bold font-playfair">{item.name}</h1>
 
                 </div>
               </div>

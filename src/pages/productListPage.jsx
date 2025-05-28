@@ -9,7 +9,7 @@ import { BreadcrumbNav } from "../components/BreadcrumNavigation"
 
 export const ProductPage = ()=>{
     return(
-        <div>
+        <div className="bg-slate-50">
             <Navbar></Navbar>
              <div className="relative">
         <div className=" aspect-video md:h-[400px]  w-full border  overflow-hidden  flex items-end justify-center">
@@ -27,7 +27,7 @@ export const ProductPage = ()=>{
 
       </div>
 
-            <div className="mx-4 mt-4 bg-slate-100 rounded-2xl">
+            <div className="mx-4 mt-4 bg-[#fff] shadow-xl rounded-2xl">
                 <ProductFilter products={ProductList}></ProductFilter>
             </div>
             <Footer></Footer>

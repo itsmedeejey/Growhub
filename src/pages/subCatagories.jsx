@@ -1,9 +1,7 @@
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import { ProductData } from "../testingdata/products";
 import { subcatData } from "../testingdata/subcatData";
 import { SubCatagoryCard } from "../components/SubcatagoryCard";
-import { Link } from "react-router-dom";
 import { BreadcrumbNav } from "../components/BreadcrumNavigation";
 export const SubCategoryPage = () => {
   return (

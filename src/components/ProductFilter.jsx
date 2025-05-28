@@ -26,7 +26,7 @@ const ProductFilter = ({ products }) => {
         <select
           value={sortOrder}
           onChange={e => setSortOrder(e.target.value)}
-          className="border rounded-xl px-4 py-2"
+          className="border w-28 rounded-full px-3 bg-transparent  py-2"
         >
           <option value="">Sort by</option>
           <option value="lowToHigh">Price: Low to High</option>
@@ -38,7 +38,7 @@ const ProductFilter = ({ products }) => {
           placeholder="Search product..."
           value={searchTerm}
           onChange={e => setSearchTerm(e.target.value)}
-          className="border  focus:outline-slate-500 rounded-xl p-2 w-72"
+          className="border  focus:outline-slate-500 rounded-full p-2 w-72"
         />
       </div>
 
