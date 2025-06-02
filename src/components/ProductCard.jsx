@@ -22,12 +22,12 @@ export const ProductCard = ({ items }) => {
                   <img
                     src={product.product_thumbnail}
                     alt={product.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-200"
+                    className="w-full h-full  object-cover hover:scale-105 transition-transform duration-200"
                   />
                 </div>
 
                 <div className="px-4 py-2 flex flex-col flex-grow">
-                  <h3 className="text-md font-semibold font-playfair  md:mb-1 line-clamp-2 flex-grow">
+                  <h3 className="text-md font- font-  md:mb-1 line-clamp-2 flex-grow">
                     {product.name}
                   </h3>
                   <div className="flex flex-row  items-baseline mb-2 md:mb-4">
@@ -41,7 +41,7 @@ export const ProductCard = ({ items }) => {
                     )}
                   </div>
 
-                  <div className="flex flex-col sm:flex-row  gap-2 mt-auto">
+                  <div className="flex flex-row sm:flex-row  gap-2 mt-auto">
                     <button className="flex-1 text-sm bg-[#6A994E] text-white px-4 py-2 rounded-full hover:bg-[#386641] transition-colors duration-200 whitespace-nowrap">
                       View Product
                     </button>

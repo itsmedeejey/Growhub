@@ -11,16 +11,16 @@ export const CategoryCard = ({ categories }) => {
     <div>
     
 
-      <div className="w-full py-5">
+      <div className="w-full py-5 font-thin">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 lg:mx-20">
             {categories.map((item) => (
               <div
                 key={item.id}
                 onClick={() => handleClick(item.id)}
-                className="bg-white  cursor-pointer rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex flex-col h-full"
+                className="bg-white  cursor-pointer  shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex flex-col h-full"
               >
-                <div className=" aspect-auto sm:aspect-[4.5/5] h-full overflow-hidden relative">
+                <div className=" aspect-square sm:aspect-square  overflow-hidden relative">
                   <img
                     src={item.logo}
                     alt={item.name}
@@ -28,7 +28,7 @@ export const CategoryCard = ({ categories }) => {
                   />
                 </div>
                 <div>
-                  <h1 className="text-center text-gbrown py-2 px-1 text-lg font-bold font-playfair">
+                  <h1 className="text-center text-gbrown py-1 px-1 text-xs font-semibold font-">
                     {item.name}
                   </h1>
                 </div>
